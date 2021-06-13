@@ -15,6 +15,7 @@ gem'milia'
 gem "font-awesome-rails"
 gem 'twitter-bootstrap-rails'
 gem 'devise-bootstrap-views'
+gem 'bootstrap-datepicker-rails'
 gem 'jquery-rails'
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
