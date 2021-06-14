@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :artifacts
+  resources :arifacts
   resources :tenants do
     resources :projects
   end

@@ -10,7 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_12_235506) do
+ActiveRecord::Schema.define(version: 2021_06_14_220931) do
+
+  create_table "arifacts", force: :cascade do |t|
+    t.string "name"
+    t.string "key"
+    t.integer "project_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["project_id"], name: "index_arifacts_on_project_id"
+  end
+
+  create_table "artifacts", force: :cascade do |t|
+    t.string "name"
+    t.string "key"
+    t.integer "project_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["project_id"], name: "index_artifacts_on_project_id"
+  end
 
   create_table "members", force: :cascade do |t|
     t.integer "tenant_id"
