@@ -12,15 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2021_06_15_031506) do
 
-  create_table "arifacts", force: :cascade do |t|
-    t.string "name"
-    t.string "key"
-    t.integer "project_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["project_id"], name: "index_arifacts_on_project_id"
-  end
-
   create_table "artifacts", force: :cascade do |t|
     t.string "name"
     t.string "key"
