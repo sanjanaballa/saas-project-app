@@ -13,6 +13,7 @@ gem 'puma', '~> 3.11'
 gem 'devise'
 gem'milia'
 gem 'aws-sdk'
+gem 'stripe'
 gem "font-awesome-rails"
 gem 'twitter-bootstrap-rails'
 gem 'devise-bootstrap-views'
